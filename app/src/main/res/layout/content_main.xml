@@ -46,10 +46,9 @@
         android:onClick="btnOnClickProcessForm" />
 
     <TextView
-        android:text="Here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
+        android:id="@+id/lblProcessForm" />
 </RelativeLayout>
