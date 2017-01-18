@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 new Button.OnClickListener() {
                     public void onClick(View view){
                         TextView lblProcessForm = (TextView) findViewById(R.id.lblProcessForm);
-                        lblProcessForm.setText("Hello " + txtEnterName.getText());
+                        lblProcessForm.setText("Hello " + txtEnterName.getText() + "!");
                         txtEnterName.setText("");
                     }
                 }

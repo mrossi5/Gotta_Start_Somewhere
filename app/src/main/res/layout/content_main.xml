@@ -16,39 +16,46 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter your name here!"
+        android:text="Enter your name below!"
         android:id="@+id/lblEnterName"
-        android:layout_alignBaseline="@+id/txtName"
-        android:layout_alignBottom="@+id/txtName"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_marginLeft="26dp"
-        android:layout_marginStart="26dp"
         android:id="@+id/txtName"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/lblEnterName"
-        android:layout_toEndOf="@+id/lblEnterName" />
+        android:layout_below="@+id/lblEnterName"
+        android:layout_alignLeft="@+id/lblEnterName"
+        android:layout_alignStart="@+id/lblEnterName"
+        android:layout_marginTop="21dp" />
 
     <Button
         android:text="Process Form"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtName"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="61dp"
         android:id="@+id/btnProcessForm"
-        android:onClick="btnOnClickProcessForm" />
+        android:onClick="btnOnClickProcessForm"
+        android:layout_below="@+id/txtName"
+        android:layout_alignLeft="@+id/txtName"
+        android:layout_alignStart="@+id/txtName"
+        android:layout_marginTop="32dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/lblProcessForm" />
+        android:id="@+id/lblProcessForm"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_alignLeft="@+id/btnProcessForm"
+        android:layout_alignStart="@+id/btnProcessForm"
+        android:layout_marginTop="250dp" />
 </RelativeLayout>
